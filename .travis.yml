@@ -28,3 +28,6 @@ deploy:
   local_dir: dist/bitcoin
   on:
     branch: development
+
+after_success:
+ - git push https://github.com/cktan105-git/bitcoin-order-app.git :master
